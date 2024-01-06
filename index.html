@@ -8,28 +8,40 @@
 
 </head>
 <body>
+    <div class="success">
+
+        <h1>Registration Success!!!</h1>
+    </div>
     <div class="container">
-    <form action="/" name="formRegister" method="" onsubmit="">
+    <form action="" name="formRegister" method="" id="registrationForm">
 
         
    
         <h2>Sign Up</h2>
-        <input type="text" id="userName" class="signup" placeholder="Username">
-        <span id="userNameSpan"></span>
-        <input type="email" id="email-id" class="signup" placeholder="Email Id">
-        <span id="emailSpan"></span>
-        <input type="password" id="password" class="signup" placeholder="Password">
-        <span id="passwordSpan"></span>
-        <input type="password" id="confirm-password" class="signup" placeholder="Confirm Password">
-        <span id="confirmPasswordSpan"></span>
-        <input type="tel" id="mobile" class="signup" placeholder="Mobile Number">
-        <span id="mobileSpan"></span>
-        <input type="date" id="date-of-birth" class="signup" placeholder="Date Of Birth">
-        <span id="dobSpan"></span>
-        <input type="button" id="btnRegister" value="Register">
+        <span id = "errSpan"></span>
+        <input type="text" id="userName" class="signup" placeholder="Username" maxlength="50"  autocomplete = "off"  required>
+        <span id="userNameSpan" class = "spanMsg"></span>
+        <input type="email" id="email-id" class="signup" placeholder="Email Id" autocomplete = "off"required>
+        <span id="emailSpan" class = "spanMsg"></span>
+        <div id="passSpan">
+        <input type="password" id="password" class="signup" placeholder="Password" maxlength="50" autocomplete = "off" required>
+        <img src="./images/visible.png" id="toggle-icon" onclick="togglePasswordVisibility()">
+        </div>
+        <span id="passwordSpan" class = "spanMsg"></span>
+        <input type="password" id="confirm-password" class="signup" placeholder="Confirm Password" maxlength="50" autocomplete = "off" required>
+        <span id="confirmPasswordSpan" class = "spanMsg"></span>
+        <input type="tel" id="mobile" class="signup" placeholder="Mobile Number" maxlength="15" autocomplete = "off" required>
+        <span id="mobileSpan" class = "spanMsg"></span>
+        <div class="dob">
+        <label>Date Of Birth</label>
+        <input type="date" id="date-of-birth" class="signup" placeholder="Date Of Birth" required>
+        </div>
+        <span id="dobSpan" class = "spanMsg"></span>
+        <button type="submit" id="btnRegister">Register</button>
         
     </form>
 </div>
     <script src="index.js"></script>
+    <!-- <script src="test.js"></script> -->
 </body>
 </html>

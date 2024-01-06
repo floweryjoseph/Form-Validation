@@ -34,7 +34,7 @@ form{
     
 }
 .container{
-    width:400px;
+    width:450px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -42,18 +42,93 @@ form{
     background:linear-gradient(rgba(130, 177, 238, 0.55), rgba(6, 6, 151, 0.587));
     /* margin:60px auto; */
     border-radius: 20px;
-    padding: 25px 15px;
+    padding: 25px 45px;
     box-shadow: 5px 5px 10px 10px rgba(0, 0, 0, 0.486);
+  
 }
-input{
+.signup{
     padding: 10px 10px;
     margin:15px;
     width:100%;
     border: 1px solid gray;
     border-radius: 10px;
+   
+}
+.signup::placeholder{
+    font-family: 'Poppins', sans-serif;
 }
 span{
     color:red;
-    font-size:10px ;
+    font-size:12px ;
+    background-color: #e8dcdcbe;
    
 }
+#btnRegister{
+    padding: 10px 10px;
+    margin:15px;
+    background:linear-gradient(rgba(130, 177, 238, 0.55), rgba(6, 6, 151, 0.587));
+    /* margin:60px auto; */
+    border-radius: 10px;
+}
+.success{
+    width:450px;
+    height: 600px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(37, 170, 37);
+    border-radius: 20px;
+    padding: 25px 45px;
+    box-shadow: 5px 5px 10px 10px rgba(0, 0, 0, 0.486);
+    position: absolute;
+    display: none;
+    z-index: 100;
+}
+h1{
+    color:white;
+    text-align: center;
+}
+.dob{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    
+    
+}
+label{
+    position: absolute;
+    font-size: smaller;
+    right:30px;
+    top:25px;
+    color:gray;
+  
+}
+#date-of-birth{
+    margin: 15px 0 ;
+    
+}
+
+#passSpan{
+    display: flex;
+    /* align-items: center;
+    justify-content: center; */
+    position: relative;
+
+}
+#password{
+
+    width:360px
+}
+#toggle-icon{
+    position: absolute;
+    top: 50%; 
+    right: 20px;
+    cursor: pointer; 
+    transform: translateY(-50%);  
+}
+
+
+/* 123@Hello */
