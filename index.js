@@ -163,7 +163,6 @@ if(userNameTries >=3 || emailTries >=3 || passTries >=3 || confirmTries >=3 || m
        if(password1 === confirmPass){
        console.log("Valid Password!!!!"); 
        e.target.style.border='3px solid green'
-       confirmPasswordSpan.innerText="Password Match!!!!";
        confirmPassValid = true;
        }else{
         e.target.style.border='2px solid red'
